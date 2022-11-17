@@ -14,7 +14,5 @@ public class SortedArray {
                 .sorted(Comparator.reverseOrder())
                 .mapToInt(Integer::intValue)
                 .toArray();
-
     }
 }
-
