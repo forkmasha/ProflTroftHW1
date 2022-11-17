@@ -1,7 +1,8 @@
 import org.junit.Test;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class HashTagTest {
+public class HashTagHelperTest {
 
     @Test
     public void getTop5() {
@@ -25,6 +26,6 @@ public class HashTagTest {
 
         String[] expected = {"#java 15", "#multithreaded 4", "#robust 1", "#distributed 1", "#dynamic 1"};
 
-        assertArrayEquals(expected, HashTag.getTop5(lines));
+        assertArrayEquals(expected, HashTagHelper.getTop5(lines));
     }
-    }
+}

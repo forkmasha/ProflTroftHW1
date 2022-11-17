@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class SortFigures {
@@ -35,7 +36,7 @@ public class SortFigures {
                 result.add(shape);
             }
         }
-        result.sort((o1, o2) -> Double.compare(o1.getVolume(), o2.getVolume()));
+        result.sort(Comparator.comparingDouble(Shape::getVolume));
         return result;
     }
 
@@ -105,7 +106,4 @@ public class SortFigures {
                     '}';
         }
     }
-
-
-
 }
