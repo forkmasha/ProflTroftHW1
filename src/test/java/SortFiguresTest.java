@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -33,8 +34,7 @@ public class SortFiguresTest {
         expected.add(new SortFigures.Cylinder(3, 3));
         expected.add(new SortFigures.Ball(3));
 
-
-        assertEquals(expected, SortFigures.sortByVolume(test));
+        assertEquals(Arrays.toString(SortFigures.sortByVolume(test).toArray()),Arrays.toString(expected.toArray()));
 
     }
 }

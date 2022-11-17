@@ -1,6 +1,6 @@
 import java.util.*;
 
-class HashTag {
+class HashTagHelper {
     static String[] getTop5(String[] lines) {
         Map<String, Integer> map = new HashMap<>();
         for (String line : lines) {
