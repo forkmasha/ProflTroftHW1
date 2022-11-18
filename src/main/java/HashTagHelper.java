@@ -20,7 +20,7 @@ class HashTagHelper {
         list.sort(Map.Entry.comparingByValue());
 
         int size = list.size();
-        String[] result = new String[size > 5 ? 5 : size]; // size > 5 ? 5 : size == Math.min(size, 5);
+        String[] result = new String[Math.min(size, 5)]; // size > 5 ? 5 : size == Math.min(size, 5);
         for (int i = 0; i < result.length; i++) {
             result[i] = list.get(size - i - 1).getKey() + " " + list.get(size - i - 1).getValue();
         }
